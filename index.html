@@ -614,9 +614,29 @@
             </li>
           </ul>
         </div>
+        <div>
+          <h4 class="join-title">Підпишіться на розсилку</h4>
+          <form class="form-footer">
+            <label class="footer-mailing">
+              <input
+                type="email"
+                class="user-mailingList-input"
+                name="user-email-mailingList"
+                placeholder="E-mail "
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+            </label>
+            <button type="submit" class="footer-button">
+              Підписатися
+              <svg class="icon-sign-up">
+                <use href="./images/icon.svg#icon-telegram-btn"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg
@@ -629,9 +649,8 @@
           </svg>
         </button>
 
-       
         <form class="modal-form">
-           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <label class="modal-form-field">
             <span class="modal-field-desc">Ім'я</span>
             <span class="modal-input-wrapper">

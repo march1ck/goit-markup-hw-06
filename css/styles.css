@@ -10,7 +10,7 @@
   --border: #ececec;
   --hero-bg-color: #c4c4c4;
   --social-list-icon: #afb1b8;
-  --transition-dur-and-func: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -399,7 +399,6 @@ ol {
 .page-footer-container {
   display: flex;
   align-items: baseline;
-  column-gap: 70px;
 }
 
 .footer {
@@ -437,7 +436,10 @@ ol {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
+.footer-social {
+  margin-left: 70px;
+  margin-right: 93px;
+}
 .footer-social-list {
   display: flex;
   column-gap: 10px;
@@ -460,6 +462,57 @@ ol {
 .footer-social-link:focus {
   background: var(--accent-color);
 }
+
+.form-footer {
+  display: flex;
+}
+.user-mailingList-input {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 15px;
+  border-radius: 4px;
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.footer-button {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+}
+.icon-sign-up {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
 /* /footer */
 
 /* portfolio-section */
@@ -630,7 +683,7 @@ ol {
   padding: 40px;
 }
 .modal-form-field {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .modal-field-desc {
   display: block;
@@ -688,11 +741,14 @@ ol {
 .modal-form-check-field {
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .modal-check {
   appearance: none;
   position: absolute;
 }
+
 .modal-own-checkbox {
   width: 16px;
   height: 15px;
@@ -727,13 +783,23 @@ ol {
 }
 .modal-button-submit {
   align-self: center;
+  font-weight: 700;
   width: 200px;
   height: 50px;
   border: none;
-  
+  padding: 10px 52px;
   border-radius: 4px;
+  letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--hero-logo-text);
-  background-color: var(--hidden-btn-hero-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+}
+.modal-button-submit:hover,
+.modal-button-submit:focus {
+  background-color: var(--hidden-btn-hero-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
