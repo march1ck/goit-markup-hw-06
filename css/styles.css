@@ -493,7 +493,6 @@ ol {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   width: 200px;
@@ -503,6 +502,10 @@ ol {
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func);
+}
+.footer-button:focus,
+.footer-button:hover{
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .icon-sign-up {
   position: absolute;
@@ -741,6 +744,7 @@ ol {
 .modal-form-check-field {
   display: flex;
   align-items: center;
+  padding-left: 13px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -766,6 +770,7 @@ ol {
 .modal-check:checked + .modal-own-checkbox {
   background-color: var(--accent-color);
   transition: background-color var(--transition-dur-and-func);
+  border: none;
 }
 .modal-check:checked + .modal-own-checkbox .modal-own-checkbox-icon {
   display: block;
