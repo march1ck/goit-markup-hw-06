@@ -438,7 +438,6 @@ ol {
 }
 .footer-social {
   margin-left: 70px;
-  margin-right: 93px;
 }
 .footer-social-list {
   display: flex;
@@ -466,6 +465,9 @@ ol {
 .form-footer {
   display: flex;
 }
+.footer-mailing{
+  margin-right: 12px;
+}
 .user-mailingList-input {
   font-family: "Roboto", sans-serif;
   display: block;
@@ -475,7 +477,6 @@ ol {
   line-height: 1.25;
   padding-left: 15px;
   border-radius: 4px;
-  margin-right: 12px;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -504,8 +505,10 @@ ol {
     box-shadow var(--transition-dur-and-func);
 }
 .footer-button:focus,
-.footer-button:hover{
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.footer-button:hover {
+  background: var(--hidden-btn-hero-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
 }
 .icon-sign-up {
   position: absolute;
@@ -637,7 +640,6 @@ ol {
 }
 .modal {
   width: 528px;
-  height: 581px;
   background-color: #ffffff;
   position: absolute;
   top: 50%;
@@ -758,8 +760,7 @@ ol {
   height: 15px;
   margin-right: 7px;
   border: 2px solid var(--secondary-color-text);
-  border-radius: 4px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
   cursor: pointer;
   transition: background-color var(--transition-dur-and-func);
 }
@@ -779,12 +780,18 @@ ol {
 .modal-check:focus + .modal-own-checkbox {
   box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
 }
+.subscribe {
+  margin-left: auto;
+}
 .modal-text-agreement {
   font-size: 14px;
   line-height: 1.7;
 }
 .modal-conditions {
   color: var(--accent-color);
+}
+.modal-conditions:hover{
+  text-decoration: none;
 }
 .modal-button-submit {
   align-self: center;
@@ -805,6 +812,7 @@ ol {
 }
 .modal-button-submit:hover,
 .modal-button-submit:focus {
-  background-color: var(--hidden-btn-hero-color);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  background: var(--hidden-btn-hero-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
